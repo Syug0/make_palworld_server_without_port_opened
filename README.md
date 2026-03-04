@@ -16,7 +16,7 @@ ZeroTier を使用してマルチプレイするための構築手順です。
 
 ---
 
-## 1. Palworld Dedicated Server のインストール
+## 1. Palworld Dedicated Server のインストール（サーバー担当のみ）
 
 1. Steam を起動
 2. 「ライブラリ」
