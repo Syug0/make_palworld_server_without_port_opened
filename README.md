@@ -1,4 +1,4 @@
-# Palworld Dedicated Server 構築手順（Windows + ZeroTier）
+## Palworld Dedicated Server 構築手順（Windows + ZeroTier）
 
 この手順は、ポート開放ができない環境でも  
 ZeroTier を使用してマルチプレイするための構築手順です。
@@ -7,7 +7,7 @@ ZeroTier を使用してマルチプレイするための構築手順です。
 
 ---
 
-# 0. 必要条件
+## 0. 必要条件
 
 - Windows 10 / 11
 - Steam インストール済み
@@ -16,7 +16,7 @@ ZeroTier を使用してマルチプレイするための構築手順です。
 
 ---
 
-# 1. Palworld Dedicated Server のインストール
+## 1. Palworld Dedicated Server のインストール
 
 1. Steam を起動
 2. 「ライブラリ」
@@ -27,7 +27,7 @@ ZeroTier を使用してマルチプレイするための構築手順です。
 
 ---
 
-# 2. ZeroTier のインストール（全員）
+## 2. ZeroTier のインストール（全員）
 
 1. https://www.zerotier.com/download/
 2. Windows版をダウンロード
@@ -36,7 +36,7 @@ ZeroTier を使用してマルチプレイするための構築手順です。
 
 ---
 
-# 3. ZeroTier ネットワーク作成（サーバー担当のみ）
+## 3. ZeroTier ネットワーク作成（サーバー担当のみ）
 
 1. https://my.zerotier.com/
 2. ログイン
@@ -45,7 +45,7 @@ ZeroTier を使用してマルチプレイするための構築手順です。
 
 ---
 
-# 4. 全員をネットワークに参加させる
+## 4. 全員をネットワークに参加させる
 
 1. タスクトレイの ZeroTier を右クリック
 2. 「Join New Network」
@@ -53,7 +53,7 @@ ZeroTier を使用してマルチプレイするための構築手順です。
 
 ---
 
-# 5. 承認作業（サーバー担当のみ）
+## 5. 承認作業（サーバー担当のみ）
 
 1. my.zerotier.com に戻る
 2. 作成したネットワークを開く
@@ -61,7 +61,7 @@ ZeroTier を使用してマルチプレイするための構築手順です。
 
 ---
 
-# 6. ZeroTier を Private に変更（サーバー側のみ）
+## 6. ZeroTier を Private に変更（サーバー側のみ）
 
 管理者 PowerShell を起動：
 
@@ -92,7 +92,7 @@ Get-NetConnectionProfile -InterfaceIndex 37
 
 ---
 
-# 7. Windows ファイアウォール設定（サーバー側）
+## 7. Windows ファイアウォール設定（サーバー側）
 
 管理者 PowerShell で実行：
 
@@ -107,7 +107,7 @@ New-NetFirewallRule -DisplayName "Palworld_UDP_8211" `
 
 ---
 
-# 8. サーバー初回起動
+## 8. サーバー初回起動
 
 Steam から Palworld Dedicated Server を起動。
 
@@ -121,7 +121,7 @@ Running Palworld dedicated server on :8211
 
 ---
 
-# 9. ZeroTier IP の確認（サーバー側）
+## 9. ZeroTier IP の確認（サーバー側）
 
 PowerShell：
 
@@ -140,7 +140,7 @@ ZeroTier One
 
 ---
 
-# 10. 接続方法
+## 10. 接続方法
 
 ゲーム内の IP 接続に：
 
@@ -164,7 +164,7 @@ ping 172.xx.xx.xx
 
 ---
 
-# 12. 推奨設定
+## 12. 推奨設定
 
 長時間運用する場合：
 
@@ -174,9 +174,9 @@ ping 172.xx.xx.xx
 
 ---
 
-# トラブルシューティング
+## トラブルシューティング
 
-## 接続できない場合
+### 接続できない場合
 
 1. ZeroTier が ONLINE か確認
 2. ping が通るか確認
